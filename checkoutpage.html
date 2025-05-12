@@ -75,6 +75,14 @@
               </div>
             </div>
           </nav> 
+
+<div class="flex flex-row gap-1 p-2 align-center">
+    <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+    </svg>
+      
+    <p class="text-sm font-bold tracking-tight text-black mt-0.5">Keranjang</p>
+</div>
 <!-- card -->
 <div class="grid grid-cols-2 p-3 gap-2">
     <div class="rounded-lg border-2 border-solid border-gray-500">
@@ -83,7 +91,16 @@
     <a href="chucktailor.html" class="flex flex-col justify-center m-2">
         <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
         <p class="text-sm font-semibold tracking-tight text-black">250.000</p>
-        <p class="text-sm text-right text-black">250.000</p>
+        <div class="flex flex-row justify-end gap-2">
+            <svg class="w-5 h-5 text-gray-800 border border-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+              </svg>
+            <p class="text-sm font-semibold tracking-tight text-black ">1</p>
+            <svg class="w-5 h-5 text-gray-800 border border-black" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14"/>
+              </svg>
+                            
+        </div>
     </a>
 </div>
 <div class="flex flex-row justify-between p-3">
@@ -91,15 +108,28 @@
     <p class="text-sm font-bold tracking-tight text-black">Rp. 250.000</p>
 </div>
 <!-- card -->
-<footer class="flex flex-row fixed bottom-0 max-w-sm w-full gap-4 p-2 bg-black text-center align-center">
-    <a href="" class="flex align-center">
-        <svg class="text-white w-8 h-8 text-gray-800 mt-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-            <path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z" clip-rule="evenodd"/>
-            <path fill-rule="evenodd" d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z" clip-rule="evenodd"/>
-          </svg>      
-    </a>
-    <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-lg px-5 py-2.5 w-full">Add to Bag</button>
-    </footer>
+<footer class="flex flex-col fixed bottom-0 max-w-sm w-full gap-4 p-2 bg-white">
+<p class="text-sm font-bold tracking-tight text-black">Rekomendasi</p>
+<div class="grid grid-cols-2 gap-10 pl-10 pr-10">
+    <div class="rounded-lg border-2 border-solid border-gray-500">
+        <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
+      <a href="chucktailor.html" class="flex flex-col justify-center m-2">
+          <h5 class="text-xs font-bold tracking-tight text-black">Chuck Tailor</h5>
+          <p class="text-xs font-semibold tracking-tight text-black">Converse</p>
+          <p class="text-xs text-right text-black">250.000</p>
+      </a>
+    </div> 
+
+    <div class="rounded-lg border-2 border-solid border-gray-500">
+        <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
+      <a href="chucktailor.html" class="flex flex-col justify-center m-2">
+          <h5 class="text-xs font-bold tracking-tight text-black">Chuck Tailor</h5>
+          <p class="text-xs font-semibold tracking-tight text-black">Converse</p>
+          <p class="text-xs text-right text-black">250.000</p>
+      </a>
+    </div> 
+</div>
+</footer>
         <!-- Seluruh isi halaman -->
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
