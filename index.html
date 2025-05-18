@@ -8,9 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/db8c48fa92.js" crossorigin="anonymous"></script>
 
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100" style="font-family: 'EB Garamond', serif;">
 <div class="max-w-sm mx-auto bg-white min-h-screen">
         <!-- Seluruh isi halaman -->
         
@@ -26,7 +28,7 @@
         d="M1 1h15M1 7h15M1 13h15" />
     </svg>
   </button>
-  <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 ml-5" alt="Flowbite Logo" />
+  <h5 class="text-xl font-bold tracking-tight text-black pl-5">Seniker</h5>
   <div class="flex gap-0">
     <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
       <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -85,9 +87,9 @@
       </ul>
     </div>
   </div>
-  <div class="hidden w-full min-h-screen" id="chart">
-<!-- card -->
-    <div class="flex flex-row gap-1 p-2 items-center">
+  <div class="hidden w-full min-h-screen hidden absolute top-0 z-50 bg-white" id="chart">
+<!-- cart -->
+    <div class="flex flex-row gap-1 p-2 items-center cursor-pointer" data-collapse-toggle="chart">
         <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
         </svg>
@@ -98,7 +100,7 @@
         <div class="rounded-lg border-2 border-solid border-gray-500">
         <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
         </div>
-        <a href="chucktailor.html" class="flex flex-col justify-center m-2">
+        <a href="" class="flex flex-col justify-center m-2">
             <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
             <p class="text-sm font-semibold tracking-tight text-black">250.000</p>
             <div class="flex flex-row justify-end gap-2">
@@ -117,15 +119,27 @@
         <p class="text-sm font-bold tracking-tight text-black">Total :</p>
         <p class="text-sm font-bold tracking-tight text-black">Rp. 250.000</p>
     </div>
-<!-- card -->
+    <div class="flex flex-row justify-end">
+    <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5">Check Out Now !</button>
+    </div>
+<!-- cart -->
   </div>
 </nav>                                 
 
+<!-- banner atas -->
+ <div class="max-w-sm mt-2 ml-3 mr-3">
+  <h5 class="text-normal font-bold tracking-tight text-black">Whatsnew GYus</h5>
+  <img src="img\banner4.jpg" class="w-full" alt="...">
+</div>
+<!-- banner atas -->
+
+
 <!-- full size pruduct -->
+ <!-- chucktailor -->
 <div class="hidden w-full min-h-screen absolute top-0 z-50" id="chucktailor">
 <div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm gap-1">
   
-<div id="toast-berhasil" class="hidden flex items-center w-full p-4 mb-4 text-black bg-white rounded-lg shadow-sm" role="alert">
+<div id="toast-berhasil" class="hidden flex items-center w-full p-4 mb-4 text-black bg-white rounded-lg shadow-sm sticky top-0 z-50" role="alert">
     <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-green-500 bg-gray-300 rounded-lg">
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
@@ -141,7 +155,7 @@
     </button>
 </div>
 
-  <div class="flex flex-row gap-1 p-2 items-center"  data-collapse-toggle="chucktailor">
+  <div class="flex flex-row gap-1 p-2 items-center cursor-pointer"  data-collapse-toggle="chucktailor">
         <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
         </svg>
@@ -189,16 +203,16 @@
         <img class="h-auto max-w-full rounded-lg border border-gray-900 shadow-sm" src="img\converse\converse1ril.jpg" alt="">
     </div>
     <h5 class="mb-1 text-sm font-normal tracking-tight text-black-800">Selected Size : <span class="p-1 bg-gray-700 text-white rounded-lg text-sm">UK</span></h5>
-    <div class="grid grid-cols-8 gap-1 text-center text-black font-semibold p-2 m-2">
-        <div class="border-2 border-solid border-black rounded-lg p-1">36</div>
-        <div class="border-2 border-solid border-black rounded-lg p-1">37</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1 hover:bg-gray-200">38</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1">39</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1">40</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1">41</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1">42</div>
-      <div class="border-2 border-solid border-black rounded-lg p-1">43</div>
-    </div>
+  <div class="ukuran-container grid grid-cols-8 gap-1 text-center text-black font-semibold p-2 m-2">
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">36</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">37</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">38</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">39</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">40</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">41</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">42</div>
+    <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">43</div>
+  </div>
     <div class="flex flex-row justify-between items-center bg-gray-200 p-3 rounded-lg">
   <svg class="w-8 h-8 text-gray-800 mt-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
         <path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z" clip-rule="evenodd"/>
@@ -211,13 +225,291 @@
 <!-- option available -->
 
 </div>
+ <!-- chucktailor -->
+
+ <!-- unerd -->
+<div class="hidden w-full min-h-screen absolute top-0 z-50" id="unerd">
+<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm gap-1">
+  
+<div id="toast-berhasil2" class="hidden flex items-center w-full p-4 mb-4 text-black bg-white rounded-lg shadow-sm sticky top-0 z-50" role="alert">
+    <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-green-500 bg-gray-300 rounded-lg">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="sr-only">Check icon</span>
+    </div>
+    <div class="ms-3 text-md font-normal">Item Berhasil ditambahkan.</div>
+    <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-black hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8" data-collapse-toggle="toast-berhasil2" aria-label="Close">
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+
+  <div class="flex flex-row gap-1 p-2 items-center cursor-pointer"  data-collapse-toggle="unerd">
+        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+        </svg>
+          
+        <p class="text-lg font-bold tracking-tight text-black">Kembali</p>
+    </div>
+    <img class="h-auto max-w-full rounded-lg" src="women\IMG_20250518_204251.jpg" alt="">
+  <a href="#">
+      <h5 class="text-xl font-bold tracking-tight text-gray-900">Unerd</h5>
+  </a>
+    <p class="text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise</p>
+  <div class="flex justify-between">
+  <h5 class="text-xl font-semibold tracking-tight text-gray-900">200.000</h5>
+  <svg class="w-5 h-5 text-gray-400 m-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
+  </svg>
+</div>
+<div class="flex flex-row align-center gap-1 mb-1">
+    <svg class="bg-gray-300 w-5 h-5 p-1 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/></svg>
+    <h5 class="text-sm font-semibold tracking-tight text-gray-900">more points by level up your membership</h5>
+    <svg class="w-4 h-4 text-black mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+      </svg>
+      
+</div>
+<div class="flex flex-row align-center justify-between pr-1">
+<div class="flex flex-row align-center justify-between gap-1">
+<svg class="w-5 h-5 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8H5m12 0a1 1 0 0 1 1 1v2.6M17 8l-4-4M5 8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.6M5 8l4-4 4 4m6 4h-4a2 2 0 1 0 0 4h4a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1Z"/>
+</svg> 
+<h5 class="text-sm font-semibold tracking-tight text-gray-900">0% Installment <span class="text-gray-500">disc up to 15 %</span> </h5>
+</div>
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gray-500">
+    <svg class="w-2 h-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+</span>
+</div>
+</div>
+<!-- option available -->
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <h5 class="mb-1 text-md font-semibold tracking-tight text-green-800">Option available :</h5>
+    <h5 class="text-sm font-semibold tracking-tight text-black-800">Variant: Unerd - <span class="text-sm font-semibold text-red-700">limited edition</span></h5>
+    <div class="grid grid-cols-3 p-2 m-2 bg-white">
+        <img class="h-auto max-w-full rounded-lg border border-gray-900 shadow-sm" src="women\IMG_20250518_204251.jpg" alt="">
+    </div>
+    <h5 class="mb-1 text-sm font-normal tracking-tight text-black-800">Selected Size : <span class="p-1 bg-gray-700 text-white rounded-lg text-sm">UK</span></h5>
+    <div class="ukuran-container grid grid-cols-8 gap-1 text-center text-black font-semibold p-2 m-2">
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">36</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">37</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">38</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">39</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">40</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">41</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">42</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">43</div>
+    </div>
+    <div class="flex flex-row justify-between items-center bg-gray-200 p-3 rounded-lg">
+  <svg class="w-8 h-8 text-gray-800 mt-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z" clip-rule="evenodd"/>
+      </svg>
+  <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5" data-collapse-toggle="toast-berhasil2">Add to Chart</button>
+
+</div>
+</div>
+<!-- option available -->
+
+</div>
+ <!-- unerd -->
+
+ <!-- Nike -->
+<div class="hidden w-full min-h-screen absolute top-0 z-50" id="nike">
+<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm gap-1">
+  
+<div id="toast-berhasil3" class="hidden flex items-center w-full p-4 mb-4 text-black bg-white rounded-lg shadow-sm sticky top-0 z-50" role="alert">
+    <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-green-500 bg-gray-300 rounded-lg">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="sr-only">Check icon</span>
+    </div>
+    <div class="ms-3 text-md font-normal">Item Berhasil ditambahkan.</div>
+    <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-black hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8" data-collapse-toggle="toast-berhasil3" aria-label="Close">
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+
+  <div class="flex flex-row gap-1 p-2 items-center cursor-pointer"  data-collapse-toggle="nike">
+        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+        </svg>
+          
+        <p class="text-lg font-bold tracking-tight text-black">Kembali</p>
+    </div>
+    <img class="h-auto max-w-full rounded-lg" src="men\10a0a068e82c1046cec8c62ad101d614.jpeg" alt="">
+  <a href="#">
+      <h5 class="text-xl font-bold tracking-tight text-gray-900">Nike</h5>
+  </a>
+    <p class="text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise</p>
+  <div class="flex justify-between">
+  <h5 class="text-xl font-semibold tracking-tight text-gray-900">200.000</h5>
+  <svg class="w-5 h-5 text-gray-400 m-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
+  </svg>
+</div>
+<div class="flex flex-row align-center gap-1 mb-1">
+    <svg class="bg-gray-300 w-5 h-5 p-1 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/></svg>
+    <h5 class="text-sm font-semibold tracking-tight text-gray-900">more points by level up your membership</h5>
+    <svg class="w-4 h-4 text-black mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+      </svg>
+      
+</div>
+<div class="flex flex-row align-center justify-between pr-1">
+<div class="flex flex-row align-center justify-between gap-1">
+<svg class="w-5 h-5 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8H5m12 0a1 1 0 0 1 1 1v2.6M17 8l-4-4M5 8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.6M5 8l4-4 4 4m6 4h-4a2 2 0 1 0 0 4h4a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1Z"/>
+</svg> 
+<h5 class="text-sm font-semibold tracking-tight text-gray-900">0% Installment <span class="text-gray-500">disc up to 15 %</span> </h5>
+</div>
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gray-500">
+    <svg class="w-2 h-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+</span>
+</div>
+</div>
+<!-- option available -->
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <h5 class="mb-1 text-md font-semibold tracking-tight text-green-800">Option available :</h5>
+    <h5 class="text-sm font-semibold tracking-tight text-black-800">Variant: Nike - <span class="text-sm font-semibold text-red-700">limited edition</span></h5>
+    <div class="grid grid-cols-3 p-2 m-2 bg-white">
+        <img class="h-auto max-w-full rounded-lg border border-gray-900 shadow-sm" src="men\10a0a068e82c1046cec8c62ad101d614.jpeg" alt="">
+    </div>
+    <h5 class="mb-1 text-sm font-normal tracking-tight text-black-800">Selected Size : <span class="p-1 bg-gray-700 text-white rounded-lg text-sm">UK</span></h5>
+    <div class="ukuran-container grid grid-cols-8 gap-1 text-center text-black font-semibold p-2 m-2">
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">36</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">37</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">38</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">39</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">40</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">41</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">42</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">43</div>
+    </div>
+    <div class="flex flex-row justify-between items-center bg-gray-200 p-3 rounded-lg">
+  <svg class="w-8 h-8 text-gray-800 mt-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z" clip-rule="evenodd"/>
+      </svg>
+  <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5" data-collapse-toggle="toast-berhasil3">Add to Chart</button>
+
+</div>
+</div>
+<!-- option available -->
+
+</div>
+ <!-- Nike --> 
+
+  <!-- puma -->
+<div class="hidden w-full min-h-screen absolute top-0 z-50" id="puma">
+<div class="max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm gap-1">
+  
+<div id="toast-berhasil4" class="hidden flex items-center w-full p-4 mb-4 text-black bg-white rounded-lg shadow-sm sticky top-0 z-50" role="alert">
+    <div class="inline-flex items-center justify-center shrink-0 w-8 h-8 text-green-500 bg-gray-300 rounded-lg">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+        </svg>
+        <span class="sr-only">Check icon</span>
+    </div>
+    <div class="ms-3 text-md font-normal">Item Berhasil ditambahkan.</div>
+    <button type="button" class="ms-auto -mx-1.5 -my-1.5 bg-white text-black hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8" data-collapse-toggle="toast-berhasil4" aria-label="Close">
+        <span class="sr-only">Close</span>
+        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+        </svg>
+    </button>
+</div>
+
+  <div class="flex flex-row gap-1 p-2 items-center cursor-pointer"  data-collapse-toggle="puma">
+        <svg class="w-6 h-6 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+        </svg>
+          
+        <p class="text-lg font-bold tracking-tight text-black">Kembali</p>
+    </div>
+    <img class="h-auto max-w-full rounded-lg" src="men\8165f91d65c5d3b27c222f56523ae558.jpeg" alt="">
+  <a href="#">
+      <h5 class="text-xl font-bold tracking-tight text-gray-900">Puma</h5>
+  </a>
+    <p class="text-sm font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise</p>
+  <div class="flex justify-between">
+  <h5 class="text-xl font-semibold tracking-tight text-gray-900">200.000</h5>
+  <svg class="w-5 h-5 text-gray-400 m-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+    <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z"/>
+  </svg>
+</div>
+<div class="flex flex-row align-center gap-1 mb-1">
+    <svg class="bg-gray-300 w-5 h-5 p-1 rounded-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M309 106c11.4-7 19-19.7 19-34c0-22.1-17.9-40-40-40s-40 17.9-40 40c0 14.4 7.6 27 19 34L209.7 220.6c-9.1 18.2-32.7 23.4-48.6 10.7L72 160c5-6.7 8-15 8-24c0-22.1-17.9-40-40-40S0 113.9 0 136s17.9 40 40 40c.2 0 .5 0 .7 0L86.4 427.4c5.5 30.4 32 52.6 63 52.6l277.2 0c30.9 0 57.4-22.1 63-52.6L535.3 176c.2 0 .5 0 .7 0c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40c0 9 3 17.3 8 24l-89.1 71.3c-15.9 12.7-39.5 7.5-48.6-10.7L309 106z"/></svg>
+    <h5 class="text-sm font-semibold tracking-tight text-gray-900">more points by level up your membership</h5>
+    <svg class="w-4 h-4 text-black mt-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+      </svg>
+      
+</div>
+<div class="flex flex-row align-center justify-between pr-1">
+<div class="flex flex-row align-center justify-between gap-1">
+<svg class="w-5 h-5 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8H5m12 0a1 1 0 0 1 1 1v2.6M17 8l-4-4M5 8a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.6M5 8l4-4 4 4m6 4h-4a2 2 0 1 0 0 4h4a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1Z"/>
+</svg> 
+<h5 class="text-sm font-semibold tracking-tight text-gray-900">0% Installment <span class="text-gray-500">disc up to 15 %</span> </h5>
+</div>
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-gray-500">
+    <svg class="w-2 h-2 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg>
+</span>
+</div>
+</div>
+<!-- option available -->
+<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+    <h5 class="mb-1 text-md font-semibold tracking-tight text-green-800">Option available :</h5>
+    <h5 class="text-sm font-semibold tracking-tight text-black-800">Variant: Puma - <span class="text-sm font-semibold text-red-700">limited edition</span></h5>
+    <div class="grid grid-cols-3 p-2 m-2 bg-white">
+        <img class="h-auto max-w-full rounded-lg border border-gray-900 shadow-sm" src="men\8165f91d65c5d3b27c222f56523ae558.jpeg" alt="">
+    </div>
+    <h5 class="mb-1 text-sm font-normal tracking-tight text-black-800">Selected Size : <span class="p-1 bg-gray-700 text-white rounded-lg text-sm">UK</span></h5>
+    <div class="ukuran-container grid grid-cols-8 gap-1 text-center text-black font-semibold p-2 m-2">
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">36</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">37</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">38</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">39</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">40</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">41</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">42</div>
+      <div class="ukuran-item border-2 border-solid border-black rounded-lg p-1 cursor-pointer">43</div>
+    </div>
+    <div class="flex flex-row justify-between items-center bg-gray-200 p-3 rounded-lg">
+  <svg class="w-8 h-8 text-gray-800 mt-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h1v2a1 1 0 0 0 1.707.707L9.414 13H15a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z" clip-rule="evenodd"/>
+        <path fill-rule="evenodd" d="M8.023 17.215c.033-.03.066-.062.098-.094L10.243 15H15a3 3 0 0 0 3-3V8h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-1v2a1 1 0 0 1-1.707.707L14.586 18H9a1 1 0 0 1-.977-.785Z" clip-rule="evenodd"/>
+      </svg>
+  <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5" data-collapse-toggle="toast-berhasil4">Add to Chart</button>
+
+</div>
+</div>
+<!-- option available -->
+
+</div>
+ <!-- puma --> 
+
 
 <!-- full size pruduct -->
 <div class="mt-2 ml-3">
   <h5 class="text-normal font-bold tracking-tight text-black">Top Pick</h5>
 </div>
 <div class="grid grid-cols-2 p-3 gap-2">
-  <div class="rounded-lg border-2 border-solid border-gray-500">
+  <div class="rounded-lg border-2 border-solid border-gray-500 cursor-pointer">
       <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
     <div data-collapse-toggle="chucktailor" class="flex flex-col justify-center m-2">
         <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
@@ -225,38 +517,63 @@
         <p class="text-sm text-right text-black">250.000</p>
     </div>
   </div>
-  <div class="rounded-lg border-2 border-solid border-gray-500">
-    <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
-  <a href="chucktailor.html" class="flex flex-col justify-center m-2">
-      <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
-      <p class="text-sm font-semibold tracking-tight text-black">Converse</p>
-      <p class="text-sm text-right text-black">250.000</p>
-  </a>
-</div>
-<div class="rounded-lg border-2 border-solid border-gray-500">
-  <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
-<a href="chucktailor.html" class="flex flex-col justify-center m-2">
-    <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
-    <p class="text-sm font-semibold tracking-tight text-black">Converse</p>
-    <p class="text-sm text-right text-black">250.000</p>
-</a>
-</div>
-<div class="rounded-lg border-2 border-solid border-gray-500">
-  <img class="h-auto max-w-full rounded-lg" src="img\converse\converse1ril.jpg" alt="">
-<a href="chucktailor.html" class="flex flex-col justify-center m-2">
-    <h5 class="text-sm font-bold tracking-tight text-black">Chuck Tailor</h5>
-    <p class="text-sm font-semibold tracking-tight text-black">Converse</p>
-    <p class="text-sm text-right text-black">250.000</p>
-</a>
-</div>
+
+  <div class="rounded-lg border-2 border-solid border-gray-500 cursor-pointer">
+      <img class="h-auto max-w-full rounded-lg" src="women\IMG_20250518_204251.jpg" alt="">
+    <div data-collapse-toggle="unerd" class="flex flex-col justify-center m-2">
+        <h5 class="text-sm font-bold tracking-tight text-black">Unerd</h5>
+        <p class="text-sm font-semibold tracking-tight text-black">Unerd</p>
+        <p class="text-sm text-right text-black">200.000</p>
+    </div>
+  </div>
+  
+  <div class="rounded-lg border-2 border-solid border-gray-500 cursor-pointer">
+      <img class="h-auto max-w-full rounded-lg" src="men\10a0a068e82c1046cec8c62ad101d614.jpeg" alt="">
+    <div data-collapse-toggle="nike" class="flex flex-col justify-center m-2">
+        <h5 class="text-sm font-bold tracking-tight text-black">Nike</h5>
+        <p class="text-sm font-semibold tracking-tight text-black">Nike</p>
+        <p class="text-sm text-right text-black">300.000</p>
+    </div>
+  </div>
+
+  <div class="rounded-lg border-2 border-solid border-gray-500 cursor-pointer">
+      <img class="h-auto max-w-full rounded-lg" src="men\8165f91d65c5d3b27c222f56523ae558.jpeg" alt="">
+    <div data-collapse-toggle="puma" class="flex flex-col justify-center m-2">
+        <h5 class="text-sm font-bold tracking-tight text-black">Puma</h5>
+        <p class="text-sm font-semibold tracking-tight text-black">Puma</p>
+        <p class="text-sm text-right text-black">500.000</p>
+    </div>
+  </div>
+
 </div>
 
-
+<!-- banner bawah -->
+<div class="max-w-sm mt-2 ml-3 mr-3">
+  <h5 class="text-normal font-bold tracking-tight text-black">Trending Now</h5>
+  <img src="img\banner2.jpg" class="w-full" alt="...">
+</div>
+<!-- banner bawah -->
 
 
 
         <!-- Seluruh isi halaman -->
 </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+  <script>
+  const containers = document.querySelectorAll('.ukuran-container');
+
+  containers.forEach(container => {
+    const items = container.querySelectorAll('.ukuran-item');
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        items.forEach(i => i.classList.remove('bg-gray-700', 'text-white'));
+        item.classList.add('bg-gray-700', 'text-white');
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
